@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-goa1
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0013-tenant/tkwch-fix-0075-0013-app/devfile-sample-goa1@sha256:88d1cb43d711f673c81640528e346fdde946aa7d1ad44efb377f16a3821553dc
+        name: my-nodejs
+        resources: {}
+status: {}
